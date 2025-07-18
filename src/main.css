@@ -1802,6 +1802,23 @@ body {
   padding-top: 7.2rem;
 }
 
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* Enable hardware acceleration for smooth animations */
+.service-carousel,
+.carousel-slide,
+.header-nav a,
+.service-carousel-image {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize font loading - fonts are loaded via Google Fonts */
+/* Enable font-display: swap for better performance */
+
 .s-header {
   z-index: 1000;
   height: 7.2rem;
@@ -3418,6 +3435,11 @@ html.no-csstransitions .hero-content {
   max-height: 70vh;
   object-fit: contain;
   transition: transform 0.3s ease;
+  /* Performance optimizations */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .service-overlay {

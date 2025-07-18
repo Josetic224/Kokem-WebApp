@@ -6,8 +6,11 @@ import './blog.css'
 import './admin.css'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+// Performance optimization: Use concurrent features
+const root = createRoot(document.getElementById('root'));
+
+root.render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);

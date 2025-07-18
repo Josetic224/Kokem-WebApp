@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import LazyImage from './LazyImage';
 
 const ServiceCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,6 +29,20 @@ const ServiceCarousel = () => {
       image: '/images/sunday.jpg'
     }
   ];
+
+  // Preload images for better performance
+  useEffect(() => {
+    slides.forEach(slide => {
+      if (slide.image) {
+        const img = new Image();
+        img.src = slide.image;
+      }
+      if (slide.backgroundImage) {
+        const img = new Image();
+        img.src = slide.backgroundImage;
+      }
+    });
+  }, [slides]);
 
   // Auto-advance slides
   useEffect(() => {
@@ -107,10 +122,11 @@ const ServiceCarousel = () => {
             // Service Slide - just image
             <div className="service-slide">
               <div className="service-image-container">
-                <img
+                <LazyImage
                   src={currentSlideData.image}
                   alt="Service"
                   className="service-carousel-image"
+                  placeholder="/images/placeholder.jpg"
                 />
               </div>
             </div>
