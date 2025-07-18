@@ -1,0 +1,27 @@
+{
+  "name": "King of Kings Evangelical Ministries International",
+  "short_name": "KOKEM",
+  "description": "Enforcing the Supremacy of Christ Over All!",
+  "icons": [
+    {
+      "src": "/images/kokem-square.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2C5F5D",
+  "background_color": "#F4F3EE",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
