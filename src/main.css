@@ -1819,6 +1819,72 @@ body {
 /* Optimize font loading - fonts are loaded via Google Fonts */
 /* Enable font-display: swap for better performance */
 
+/* ===================================================================
+ * # Optimized Image Component
+ *
+ * ------------------------------------------------------------------- */
+.optimized-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.optimized-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.optimized-image.loaded {
+  opacity: 1;
+}
+
+.optimized-image.loading {
+  opacity: 0;
+}
+
+.image-loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #1a1a1a 100%);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.image-error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #1a1a1a 100%);
+}
+
+.error-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 .s-header {
   z-index: 1000;
   height: 7.2rem;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import LazyImage from './LazyImage';
+import OptimizedImage from './OptimizedImage';
 
 const ServiceCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -122,11 +122,12 @@ const ServiceCarousel = () => {
             // Service Slide - just image
             <div className="service-slide">
               <div className="service-image-container">
-                <LazyImage
+                <OptimizedImage
                   src={currentSlideData.image}
                   alt="Service"
                   className="service-carousel-image"
                   placeholder="/images/placeholder.jpg"
+                  loading="eager"
                 />
               </div>
             </div>

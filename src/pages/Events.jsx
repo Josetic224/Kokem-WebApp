@@ -34,6 +34,39 @@ const Events = () => {
       attendance: "In-person and Online",
       featuredImage: "/images/sunday.jpg",
       verse: "A place for worship, Word, and wonders."
+    },
+    {
+      id: 4,
+      title: "Special Revival Meetings",
+      description: "Periodic special revival meetings where the supernatural power of God is demonstrated through miracles, signs, and wonders. These meetings are characterized by powerful deliverance, divine healing, and life-transforming encounters with the Holy Spirit.",
+      date: "As Announced",
+      time: "Various Times",
+      location: "Km 15 Badagry Expressway, Lagos, Nigeria",
+      attendance: "In-person and Online",
+      featuredImage: "/images/blog/revival-meeting.jpg",
+      verse: "And these signs shall follow them that believe... - Mark 16:17"
+    },
+    {
+      id: 5,
+      title: "Counseling & Deliverance Sessions",
+      description: "Personal counseling and deliverance sessions with Pastor Evans Mozurunyem and trained ministry team. Individual attention for those seeking freedom from spiritual bondage, personal breakthrough, and divine guidance for life decisions.",
+      date: "By Appointment",
+      time: "Various Times",
+      location: "Km 15 Badagry Expressway, Lagos, Nigeria",
+      attendance: "In-person only",
+      featuredImage: "/images/blog/counseling.jpg",
+      verse: "And ye shall know the truth, and the truth shall make you free. - John 8:32"
+    },
+    {
+      id: 6,
+      title: "Prayer & Fasting Programs",
+      description: "Corporate prayer and fasting programs designed to seek God's face for breakthrough, revival, and supernatural intervention. These intensive sessions combine fasting with fervent prayer for personal and corporate breakthroughs.",
+      date: "Monthly",
+      time: "Various Schedules",
+      location: "Km 15 Badagry Expressway, Lagos, Nigeria",
+      attendance: "In-person and Online",
+      featuredImage: "/images/blog/prayer-fasting.jpg",
+      verse: "This kind can come forth by nothing, but by prayer and fasting. - Mark 9:29"
     }
   ];
 
