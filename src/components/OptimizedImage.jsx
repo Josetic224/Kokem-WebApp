@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-const OptimizedImage = ({ 
-  src, 
-  alt, 
-  className = '', 
+const OptimizedImage = ({
+  src,
+  alt,
+  className = '',
   placeholder = '/images/placeholder.jpg',
   webpSrc = null,
   sizes = '100vw',
@@ -19,7 +19,7 @@ const OptimizedImage = ({
   useEffect(() => {
     // Preload the image
     const img = new Image();
-    
+
     // Try WebP first, fallback to original
     const tryLoadWebP = () => {
       img.src = webpSource;

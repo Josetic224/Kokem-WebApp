@@ -30,16 +30,37 @@ const ServiceCarousel = () => {
     }
   ];
 
-  // Preload images for better performance
+  // Preload images for better performance (WebP first, then JPG fallback)
   useEffect(() => {
+    const preloadImage = async (src) => {
+      // Try WebP first
+      const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+
+      try {
+        // Check if WebP exists
+        const webpResponse = await fetch(webpSrc, { method: 'HEAD' });
+        if (webpResponse.ok) {
+          const webpImg = new Image();
+          webpImg.src = webpSrc;
+          console.log(`🚀 Preloading WebP: ${webpSrc}`);
+          return;
+        }
+      } catch (error) {
+        console.log(`⚠️ WebP not available: ${webpSrc}`);
+      }
+
+      // Fallback to original format
+      const img = new Image();
+      img.src = src;
+      console.log(`🚀 Preloading JPG: ${src}`);
+    };
+
     slides.forEach(slide => {
       if (slide.image) {
-        const img = new Image();
-        img.src = slide.image;
+        preloadImage(slide.image);
       }
       if (slide.backgroundImage) {
-        const img = new Image();
-        img.src = slide.backgroundImage;
+        preloadImage(slide.backgroundImage);
       }
     });
   }, [slides]);
