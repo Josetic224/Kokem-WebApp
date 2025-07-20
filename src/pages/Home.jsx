@@ -4,6 +4,7 @@ import ConnectSection from '../components/ConnectSection';
 import ServiceCarousel from '../components/ServiceCarousel';
 import SeriesSection from '../components/SeriesSection';
 import SocialSection from '../components/SocialSection';
+import ImageTest from '../components/ImageTest';
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
 
   return (
     <>
+      <ImageTest />
       <ServiceCarousel />
       <AboutSection />
       <ConnectSection />

@@ -11,58 +11,72 @@ const OptimizedImage = ({
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const [currentSrc, setCurrentSrc] = useState(placeholder);
+  const [currentSrc, setCurrentSrc] = useState(src); // Start with original src
 
   // Generate WebP source if not provided
   const webpSource = webpSrc || src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
 
   useEffect(() => {
-    // Preload the image
-    const img = new Image();
-
-    // Try WebP first, fallback to original
-    const tryLoadWebP = () => {
-      img.src = webpSource;
-      img.onload = () => {
-        setCurrentSrc(webpSource);
-        setImageLoaded(true);
-      };
-      img.onerror = () => {
-        // WebP failed, try original format
-        tryLoadOriginal();
-      };
-    };
-
-    const tryLoadOriginal = () => {
-      img.src = src;
-      img.onload = () => {
-        setCurrentSrc(src);
-        setImageLoaded(true);
-      };
-      img.onerror = () => {
-        setImageError(true);
-        setImageLoaded(true);
-      };
-    };
+    setImageLoaded(false);
+    setImageError(false);
 
     // Check if browser supports WebP
     const supportsWebP = () => {
-      const canvas = document.createElement('canvas');
-      canvas.width = 1;
-      canvas.height = 1;
-      return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 1;
+        canvas.height = 1;
+        return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+      } catch {
+        return false;
+      }
     };
 
-    if (supportsWebP()) {
-      tryLoadWebP();
-    } else {
-      tryLoadOriginal();
-    }
+    // Simple image loading with WebP preference
+    const loadImage = () => {
+      const img = new Image();
 
-    return () => {
-      img.onload = null;
-      img.onerror = null;
+      // If browser supports WebP, try WebP first
+      if (supportsWebP()) {
+        img.src = webpSource;
+        img.onload = () => {
+          console.log(`✅ Loaded WebP: ${webpSource}`);
+          setCurrentSrc(webpSource);
+          setImageLoaded(true);
+        };
+        img.onerror = () => {
+          console.log(`⚠️ WebP failed, trying JPG: ${src}`);
+          // WebP failed, try original
+          const fallbackImg = new Image();
+          fallbackImg.src = src;
+          fallbackImg.onload = () => {
+            console.log(`✅ Loaded JPG fallback: ${src}`);
+            setCurrentSrc(src);
+            setImageLoaded(true);
+          };
+          fallbackImg.onerror = () => {
+            console.log(`❌ Both formats failed: ${src}`);
+            setImageError(true);
+            setImageLoaded(true);
+          };
+        };
+      } else {
+        // Browser doesn't support WebP, use original
+        img.src = src;
+        img.onload = () => {
+          console.log(`✅ Loaded JPG (no WebP support): ${src}`);
+          setCurrentSrc(src);
+          setImageLoaded(true);
+        };
+        img.onerror = () => {
+          console.log(`❌ Image failed: ${src}`);
+          setImageError(true);
+          setImageLoaded(true);
+        };
+      }
     };
+
+    loadImage();
   }, [src, webpSource]);
 
   if (imageError) {

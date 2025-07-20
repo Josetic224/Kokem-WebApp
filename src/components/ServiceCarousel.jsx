@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import OptimizedImage from './OptimizedImage';
+import WebPImage from './WebPImage';
 
 const ServiceCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,17 +16,17 @@ const ServiceCarousel = () => {
     {
       id: 1,
       type: 'service',
-      image: '/images/highTension.jpg'
+      image: '/images/highTension.webp'
     },
     {
       id: 2,
       type: 'service',
-      image: '/images/communion.jpg'
+      image: '/images/communion.webp'
     },
     {
       id: 3,
       type: 'service',
-      image: '/images/sunday.jpg'
+      image: '/images/sunday.webp'
     }
   ];
 
@@ -143,12 +143,10 @@ const ServiceCarousel = () => {
             // Service Slide - just image
             <div className="service-slide">
               <div className="service-image-container">
-                <OptimizedImage
+                <WebPImage
                   src={currentSlideData.image}
                   alt="Service"
                   className="service-carousel-image"
-                  placeholder="/images/placeholder.jpg"
-                  loading="eager"
                 />
               </div>
             </div>
