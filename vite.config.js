@@ -19,12 +19,6 @@ export default defineConfig({
     },
     // Enable minification and compression
     minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console.log in production
-        drop_debugger: true
-      }
-    },
     // Optimize chunk size
     chunkSizeWarningLimit: 1000,
     // Enable source maps for debugging (disable in production)
