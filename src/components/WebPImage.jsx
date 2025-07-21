@@ -21,25 +21,22 @@ const WebPImage = ({
     );
   }
 
-  console.log(`🖼️ Rendering image - JPG: ${src}, WebP: ${webpSource}`);
-
   return (
     <picture className={className}>
       <source
         srcSet={webpSource}
         type="image/webp"
-        onError={() => console.log(`⚠️ WebP source failed: ${webpSource}`)}
       />
       <img
         src={src}
         alt={alt}
         className={className}
         onError={(e) => {
-          console.log(`❌ Image failed to load: ${src}`, e);
+          console.warn(`Image failed to load: ${src}`);
           setImageError(true);
         }}
-        onLoad={(e) => {
-          console.log(`✅ Image loaded successfully: ${e.target.currentSrc || src}`);
+        onLoad={() => {
+          // Image loaded successfully
         }}
       />
     </picture>
