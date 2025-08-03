@@ -48,7 +48,7 @@ const Services = () => {
                     Experience the presence of the Holy Spirit as we gather to worship and receive from God's Word.
                   </p>
                   <ul className="events-list__meta">
-                    <li className="events-list__meta-date">8:00 AM</li>
+                    <li className="events-list__meta-date">8:00 AM | 10:00 AM | 6:00 PM</li>
                     <li className="events-list__meta-loc">Km 15 Badagry Expressway, Lagos</li>
                   </ul>
                 </div>
@@ -59,13 +59,13 @@ const Services = () => {
                   <span>Wednesday</span>
                 </div>
                 <div className="events-list__content">
-                  <h4 className="events-list__title">Communion & Bible Study</h4>
+                  <h4 className="events-list__title">Revival Meetings</h4>
                   <p className="events-list__desc">
-                    Join us for communion service and in-depth Bible study. A time of fellowship, breaking bread together,
-                    and diving deep into God's Word for spiritual growth and understanding.
+                    Powerful midweek revival meetings featuring deliverance ministry, healing services, and 
+                    prophetic ministry. Come expecting miracles, breakthroughs, and supernatural testimonies.
                   </p>
                   <ul className="events-list__meta">
-                    <li className="events-list__meta-date">9:00 AM</li>
+                    <li className="events-list__meta-date">9:00 AM - 12:00 PM</li>
                     <li className="events-list__meta-loc">Main Sanctuary</li>
                   </ul>
                 </div>

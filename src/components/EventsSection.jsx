@@ -5,7 +5,7 @@ const EventsSection = () => {
       title: "Monday — High Tension",
       description: "A day of intense spiritual warfare and intercession. Fasting, Prayer Vigil where we engage in powerful spiritual warfare against the forces of darkness.",
       date: "Every Monday",
-      time: "10:00 PM - Till Dawn",
+      time: "10:00 AM - 4:00 AM (Next Day)",
       location: "Km 15 Badagry Expressway, Lagos",
       featuredImage: "/images/highTension.jpg"
     },
@@ -14,7 +14,7 @@ const EventsSection = () => {
       title: "Wednesday — Communion & Bible Study",
       description: "Join us for communion service and in-depth Bible study. A time of fellowship, breaking bread together, and diving deep into God's Word for spiritual growth.",
       date: "Every Wednesday",
-      time: "9:00 AM - 11:00 AM",
+      time: "9:00 AM - 12:00 PM",
       location: "Km 15 Badagry Expressway, Lagos",
       featuredImage: "/images/communion.jpg"
     },

@@ -28,15 +28,15 @@ const AboutSection = () => {
             <li>
               <h4>Communion & Bible Study</h4>
               <p>
-                Wednesday - 9:00 AM <br />
+                Wednesday - 9:00 AM - 12:00 PM <br />
                 Fellowship, communion, and in-depth Bible study
               </p>
             </li>
             <li>
-              <h4>Prayer & Fasting</h4>
+              <h4>High Tension (Prayer & Fasting)</h4>
               <p>
-                Friday - 6:00 AM | 6:00 PM <br />
-                Spiritual warfare and breakthrough sessions
+                Monday - 10:00 AM - 4:00 AM (Next Day) <br />
+                Intense spiritual warfare and intercession
               </p>
             </li>
           </ul>

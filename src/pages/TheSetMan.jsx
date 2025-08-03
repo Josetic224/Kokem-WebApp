@@ -131,9 +131,9 @@ const TheSetMan = () => {
               <div className="sidebar-widget">
                 <h4>Service Times</h4>
                 <ul className="service-times">
-                  <li><strong>Sunday Service:</strong><br />8:00 AM | 10:00 AM | 6:00 PM</li>
-                  <li><strong>Revival Meetings:</strong><br />Wednesday 6:00 PM</li>
-                  <li><strong>Prayer & Fasting:</strong><br />Friday 6:00 AM | 6:00 PM</li>
+                  <li><strong>Sunday Service:</strong><br />8:00 AM</li>
+                  <li><strong>Communion & Bible Study:</strong><br />Wednesday 9:00 AM - 12:00 PM</li>
+                  <li><strong>High Tension (Prayer & Fasting):</strong><br />Monday 10:00 AM - 4:00 AM (Next Day)</li>
                 </ul>
               </div>
 
