@@ -65,7 +65,7 @@ const Services = () => {
                     prophetic ministry. Come expecting miracles, breakthroughs, and supernatural testimonies.
                   </p>
                   <ul className="events-list__meta">
-                    <li className="events-list__meta-date">9:00 AM - 12:00 PM</li>
+                    <li className="events-list__meta-date">6:00 PM</li>
                     <li className="events-list__meta-loc">Main Sanctuary</li>
                   </ul>
                 </div>
@@ -73,74 +73,17 @@ const Services = () => {
 
               <div className="events-list__item">
                 <div className="events-list__date">
-                  <span>Friday</span>
+                  <span>Monday</span>
                 </div>
                 <div className="events-list__content">
-                  <h4 className="events-list__title">Prayer & Fasting</h4>
+                  <h4 className="events-list__title">High Tension (Prayer & Fasting)</h4>
                   <p className="events-list__desc">
-                    Intensive prayer sessions and spiritual warfare meetings. Join us as we engage in powerful 
+                    Intensive prayer sessions and spiritual warfare meetings. Join us as we engage in powerful
                     intercession, fasting, and breakthrough prayers that move mountains and change situations.
                   </p>
                   <ul className="events-list__meta">
-                    <li className="events-list__meta-date">6:00 AM | 6:00 PM</li>
-                    <li className="events-list__meta-loc">Prayer Hall</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <br />
-
-            <h2>Special Services</h2>
-            
-            <div className="events-list">
-              <div className="events-list__item">
-                <div className="events-list__date">
-                  <span>Monthly</span>
-                </div>
-                <div className="events-list__content">
-                  <h4 className="events-list__title">Deliverance Crusades</h4>
-                  <p className="events-list__desc">
-                    Special deliverance crusades where captives are set free from spiritual bondage, 
-                    generational curses are broken, and families are restored through the power of Christ.
-                  </p>
-                  <ul className="events-list__meta">
-                    <li className="events-list__meta-date">Last Sunday of Every Month</li>
-                    <li className="events-list__meta-loc">Main Auditorium</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="events-list__item">
-                <div className="events-list__date">
-                  <span>Quarterly</span>
-                </div>
-                <div className="events-list__content">
-                  <h4 className="events-list__title">Healing Services</h4>
-                  <p className="events-list__desc">
-                    Special healing services where the sick are healed, the lame walk, and miracles manifest. 
-                    Come with faith and expectation for your supernatural breakthrough.
-                  </p>
-                  <ul className="events-list__meta">
-                    <li className="events-list__meta-date">Every 3rd Month</li>
+                    <li className="events-list__meta-date">10:00 AM - 4:00 AM (Next Day)</li>
                     <li className="events-list__meta-loc">Main Sanctuary</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="events-list__item">
-                <div className="events-list__date">
-                  <span>Annual</span>
-                </div>
-                <div className="events-list__content">
-                  <h4 className="events-list__title">KOKEM Convention</h4>
-                  <p className="events-list__desc">
-                    Our annual convention featuring powerful teachings, prophetic ministry, and supernatural 
-                    encounters. Join believers from across Nigeria for this life-changing experience.
-                  </p>
-                  <ul className="events-list__meta">
-                    <li className="events-list__meta-date">December</li>
-                    <li className="events-list__meta-loc">Convention Center</li>
                   </ul>
                 </div>
               </div>
