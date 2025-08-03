@@ -15,21 +15,21 @@ const Events = () => {
     },
     {
       id: 2,
-      title: "Wednesday — Covenant Hour of Breakthrough",
-      description: "Deliverance & Counseling Service anointed for breakthroughs, healing, and personal deliverance. Come with expectation. Leave with a testimony. This service focuses on breaking spiritual bondages and receiving divine breakthrough in every area of your life.",
+      title: "Wednesday — Communion & Bible Study",
+      description: "Join us for communion service and in-depth Bible study. A time of fellowship, breaking bread together, and diving deep into God's Word for spiritual growth and understanding. Experience the power of communion and the richness of God's Word.",
       date: "Every Wednesday",
-      time: "9:00 AM - 12:00 NOON",
+      time: "9:00 AM - 11:00 AM",
       location: "Km 15 Badagry Expressway, Lagos, Nigeria",
       attendance: "In-person and Online",
       featuredImage: "/images/communion.jpg",
-      verse: "Come with expectation. Leave with a testimony."
+      verse: "This do in remembrance of me. - Luke 22:19"
     },
     {
       id: 3,
       title: "Sunday — Worship Encounter",
-      description: "A full worship experience in God's presence, beginning with deep Bible teaching. Bible Study + Worship Service where we dive deep into God's Word and experience His manifest presence. A place for worship, Word, and wonders.",
+      description: "A full worship experience in God's presence with powerful worship, life-changing messages, and supernatural encounters with God. Experience the Holy Spirit as we gather to worship and receive from God's Word. A place for worship, Word, and wonders.",
       date: "Every Sunday",
-      time: "Bible Study: 8:00 AM - 9:00 AM | Main Service: 9:00 AM - 11:30 AM",
+      time: "8:00 AM - 11:00 AM",
       location: "Km 15 Badagry Expressway, Lagos, Nigeria",
       attendance: "In-person and Online",
       featuredImage: "/images/sunday.jpg",

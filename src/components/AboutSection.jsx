@@ -21,15 +21,15 @@ const AboutSection = () => {
             <li>
               <h4>Sunday Service</h4>
               <p>
-                Sunday - 8:00 AM | 10:00 AM | 6:00 PM <br />
+                Sunday - 8:00 AM <br />
                 Km 15 Badagry Expressway, Lagos, Nigeria
               </p>
             </li>
             <li>
-              <h4>Revival Meetings</h4>
+              <h4>Communion & Bible Study</h4>
               <p>
-                Wednesday - 6:00 PM <br />
-                Powerful deliverance and healing services
+                Wednesday - 9:00 AM <br />
+                Fellowship, communion, and in-depth Bible study
               </p>
             </li>
             <li>
